@@ -2,44 +2,68 @@
     <body>
         <p  style="text-align: right; font-size: 60px">Kapshuk</p>
         Podaj Liczbę: <input type="number" id="liczba">
-        <input type="button" value="silnia" onclick="Silnia()">
-        <input type="button" value="Ciąg Fibonacciego" onclick="alert(Fibb(5))">
+        <input type="button" value="Silnia" onclick="Silnia()">
+        <input type="button" value="Ciąg Fibonacciego" onclick="Fibb()">
         <input type="button" value="Random" onclick="random()">
         <div id="wynik"></div>
 
+        <script>
+            function Silnia() 
+            {
+                var n = parseFloat(liczba.value);
+            
+                function sil(n)
+                {
+                    if(n == 0)
+                    {
+                     return 1;
+                    }
+                    else
+                    {
+                        return n * sil(n-1);
+                    }
+                }
+            
+                document.write(n + "! = " + sil(n));
+            }
+            
+            function Fibb() 
+            {
+                var n = parseFloat(liczba.value);
+
+                function fibonaci(n) 
+                {
+                    if(n < 3)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        return fibonaci(n - 2) + fibonaci(n - 1);
+                    }
+                }
+               
+                document.write("Ciąg Fibonacciego dla " + n + " wyrazu = " + fibonaci(n));
+            }
+            
+            function random()
+            {
+                var n = parseFloat(liczba.value);
+                var los = new Array (n+2);
+
+                function rand(n)
+                {
+                    for(var i = 0;i < n;i ++)
+                    {
+                        var x = Math.floor(Math.random()*100+1);
+                        los[i] = x;
+                        document.write(los[i] + "<br>");
+                    }
+                }
+
+                
+            }
+            </script>
+
     </body>
 </html>
-<script>
-function Silnia() 
-{
-    var A = parseInt(liczba.value);
-    if(A == 1)
-    {
-        return 1;
-    }
-    else
-    {
-        return A*Silnia(A-1);
-    }
-    wynik.innerHTML=Silnia;
-}
-
-function Fibb(b) 
-{
-
-    if(b==1 ){
-            return 1;
-        }
-    else if(b==0){
-            return 0;
-    }
-        else{
-            return Fibb(b-2)+Fibb(b-1);
-        }
-}
-
-function random()
-{
-
-}
-</script>

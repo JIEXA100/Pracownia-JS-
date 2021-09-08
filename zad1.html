@@ -1,0 +1,30 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <input type="button" onclick="dzialanie()" value="Uruchom zadanie" />
+        <div style="color: red; font-size: 50px;">
+        <script>
+            function dzialanie()
+            {
+            var x1_kap = prompt("liczba1  = ", "");
+            var x2_kap = prompt("liczba2  = ", "");
+
+            var y;
+            var y1;
+
+            var a = parseFloat(x1_kap);
+            var b = parseFloat(x2_kap);
+
+            y = 3 * Math.pow(x1_kap, (7 / 9));
+            y1 = 2 * Math.cos(x1_kap) + 2 * Math.sin(x2_kap);
+            
+            document.write("Wczytane liczby:   X1 = " + x1_kap + " X2 =  " + x2_kap + "<br>");
+            document.write("y = 3 * " + x1_kap + "<sup> 7 / 9 </sup> = " + y + "<br>");
+            document.write("y1 = 2 * cos(" + x1_kap + ") + 2 * sin(" + x2_kap + ") = " + y1);
+            }
+        </script>
+        </div>
+    </body>
+</html>

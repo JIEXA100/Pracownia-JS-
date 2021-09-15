@@ -1,0 +1,31 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        Podaj odległość między chłopakami =
+        <input type="number" id="a"><br>
+        Podaj drogę przelecianą przez samolot =
+        <input type="number" id="c"><br>
+        <input type="button" onclick="dzialanie()" value="Uruchom zadanie" />
+        
+        <script>
+            function dzialanie()
+            {
+            var h_kap;
+            var kat_kap;
+
+            var odl_kap = parseFloat(a.value);
+            var s_kap = parseFloat(c.value);
+
+            h_kap = Math.floor(Math.sqrt(s_kap * s_kap - odl_kap * odl_kap));
+            kat_kap = Math.floor(Math.acos(odl_kap/s_kap)*180/Math.PI*100)/100;
+
+            document.write("Samolot był na wysokosci = " + h_kap + "<br>");
+            document.write("Kąt alfa = " + kat_kap);
+            
+            }
+        </script>
+        </div>
+    </body>
+</html>

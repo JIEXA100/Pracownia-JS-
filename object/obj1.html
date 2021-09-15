@@ -1,0 +1,26 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            function pizza(nazwa,srednica,cena,ciasto,sos)
+            {
+                this.nazwa=nazwa;
+                this.srednica=srednica;
+                this.cena=cena;
+                this.ciasto=ciasto;
+                this.sos=sos;
+            }
+
+            pizza1 = new pizza('wiejska',32,32.90,'włoski','czosnkowy');
+            pizza2 = new pizza('jedność',45,41.90,'cienki','łagodny');
+            pizza3 = new pizza('obywatelska',45,39.90,'gruby','ostry');
+            pizza4 = new pizza('pół na pół',60,46.90,'włoski','mieszany');
+            pizza4 = new pizza('zagraniczna',32,36.90,'cienki','BBQ');
+
+            document.write("Pizza " + pizza1.nazwa + " rozmiar: " + pizza1.srednica +
+             " cm w cenie = " + pizza1.cena + " zł na " + pizza1.ciasto + "m cieście z sosem " + pizza1.sos);
+        </script>
+    </body>
+</html>

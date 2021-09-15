@@ -1,0 +1,32 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        Obliczanie oległości od drabiny i kąta:<br>
+        Podaj d =
+        <input type="number" id="d">
+        Podaj x =
+        <input type="number" id="x"><br>
+        <input type="button" onclick="dzialanie()" value="Uruchom zadanie" />
+        <div id="wynik"></div>
+        <script>
+            function dzialanie()
+            {
+            var drabina;
+            var alfa;
+
+            var a = parseFloat(d.value);
+            var b = parseFloat(x.value);
+
+            drabina =  Math.floor(Math.sqrt((a * a) + (b * b)));
+            alfa = Math.round((Math.atan(a/b) * 180) / Math.PI*100)/100;
+
+            document.write("Drabina = " + drabina + "<br>");
+            document.write("Kąt alfa = " + alfa);
+            
+            }
+        </script>
+        </div>
+    </body>
+</html>

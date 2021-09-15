@@ -1,0 +1,115 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            var samochod = 
+            {
+                marka: 'mercedes',
+                napęd: '4x4',
+                kolor: 'biały',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.marka + ' ' + this.napęd + ' ' + this.kolor)
+                }
+            }
+
+            var ciezarowka = 
+            {
+                marka: 'Scania',
+                waga: '15 tonn',
+                koni: 700,
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.marka + ' ' + this.waga + ' ' + this.koni)
+                }
+            }
+
+            var dom = 
+            {
+                kolor: 'zółty',
+                pietra: 2,
+                mieszkance: 7,
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.kolor + ' ' + this.pietra + ' ' + this.mieszkance)
+                }
+            }
+
+            var pudelko = 
+            {
+                objetosc: '5 cm^3',
+                boka: '3 cm',
+                bokb: '5 cm',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.objetosc + ' ' + this.boka + ' ' + this.bokb)
+                }
+            }
+
+            var wazon = 
+            {
+                kolor: 'zielony',
+                material: '15 tonn',
+                srednica: 30,
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.kolor + ' ' + this.material + ' ' + this.srednica)
+                }
+            }
+
+            var pociag = 
+            {
+                dlugosc: '500 m',
+                wagony: 5,
+                typ: 'pendolino',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.dlugosc + ' ' + this.wagony + ' ' + this.typ)
+                }
+            }
+
+            var mebel = 
+            {
+                material: 'eko-skóra',
+                kolor: 'brązowy',
+                kreci_sie: 'tak',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.material + ' ' + this.kolor + ' ' + this.kreci_sie)
+                }
+            }
+
+            var autobus = 
+            {
+                marka: 'man',
+                kolor: 'biały',
+                koni: '600',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.marka + ' ' + this.kolor + ' ' + this.koni)
+                }
+            }
+
+            var komputer = 
+            {
+                procek: 'intel',
+                grafika: 'RTX',
+                ram: '32 GB',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.procek + ' ' + this.grafika + ' ' + this.ram)
+                }
+            }
+        </script> 
+        <input type="button" value="Samochód" onclick="samochod.wyswietl_kapshuk()"><br>
+        <input type="button" value="Ciężarówka" onclick="ciezarowka.wyswietl_kapshuk()"><br>
+        <input type="button" value="Dom" onclick="dom.wyswietl_kapshuk()"><br>
+        <input type="button" value="Pudelko" onclick="pudelko.wyswietl_kapshuk()"><br>
+        <input type="button" value="Wazon" onclick="wazon.wyswietl_kapshuk()"><br>
+        <input type="button" value="Pociąg" onclick="pociag.wyswietl_kapshuk()"><br>
+        <input type="button" value="Mebel" onclick="mebel.wyswietl_kapshuk()"><br>
+        
+    </body>
+</html>

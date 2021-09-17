@@ -102,6 +102,72 @@
                     document.write(this.procek + ' ' + this.grafika + ' ' + this.ram)
                 }
             }
+
+            var monitor = 
+            {
+                matryca: 'VA+',
+                producent: 'Samsung',
+                cali: 32,
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.matryca + ' ' + this.producent + ' ' + this.cali)
+                }
+            }
+
+            var router = 
+            {
+                producent: 'TP-Link',
+                zasięg: '100m',
+                czestotliwosc: '5 GHz',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.producent + ' ' + this.zasięg + ' ' + this.czestotliwosc)
+                }
+            }
+
+            var telefon = 
+            {
+                producent: 'Apple',
+                cali: 6.1,
+                color: 'Pacific Blue',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.producent + ' ' + this.cali + ' ' + this.color)
+                }
+            }
+
+            var spodnie = 
+            {
+                rodzaj: 'dresy',
+                color: 'szare',
+                plec: 'męskie',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.rodzaj + ' ' + this.color + ' ' + this.plec)
+                }
+            }
+
+            var owoc = 
+            {
+                color: 'zółty',
+                rozmiar: '20 cm',
+                nazwa: 'banan',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.color + ' ' + this.rozmiar + ' ' + this.nazwa)
+                }
+            }
+
+            var wiezowiec = 
+            {
+                nazwa: 'Singer Building',
+                miasto: 'New York',
+                wysokosc: '187m',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.nazwa + ' ' + this.miasto + ' ' + this.wysokosc)
+                }
+            }
         </script> 
         <input type="button" value="Samochód" onclick="samochod.wyswietl_kapshuk()"><br>
         <input type="button" value="Ciężarówka" onclick="ciezarowka.wyswietl_kapshuk()"><br>
@@ -110,6 +176,13 @@
         <input type="button" value="Wazon" onclick="wazon.wyswietl_kapshuk()"><br>
         <input type="button" value="Pociąg" onclick="pociag.wyswietl_kapshuk()"><br>
         <input type="button" value="Mebel" onclick="mebel.wyswietl_kapshuk()"><br>
-        
+        <input type="button" value="Autobus" onclick="autobus.wyswietl_kapshuk()"><br>
+        <input type="button" value="Komputer" onclick="komputer.wyswietl_kapshuk()"><br>
+        <input type="button" value="Monitor" onclick="monitor.wyswietl_kapshuk()"><br>
+        <input type="button" value="Router" onclick="router.wyswietl_kapshuk()"><br>
+        <input type="button" value="Telefon" onclick="telefon.wyswietl_kapshuk()"><br>
+        <input type="button" value="Spodnie" onclick="spodnie.wyswietl_kapshuk()"><br>
+        <input type="button" value="Owoc" onclick="owoc.wyswietl_kapshuk()"><br>
+        <input type="button" value="Wieżowiec" onclick="wiezowiec.wyswietl_kapshuk()"><br>
     </body>
 </html>

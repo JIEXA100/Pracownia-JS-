@@ -1,0 +1,234 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            var samochod = 
+            {
+                marka: 'mercedes',
+                napęd: '4x4',
+                kolor: 'biały',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.marka + ' ' + this.napęd + ' ' + this.kolor)
+                }
+                
+            }
+
+            samochod.pokaz_kapshuk=function() {alert('marka: ' + this.marka + ' napęd: ' + this.napęd + ' kolor: ' + this.kolor)}
+            //samochod.pokaz_kapshuk();
+
+            var ciezarowka = 
+            {
+                marka: 'Scania',
+                waga: '15 tonn',
+                koni: 700,
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.marka + ' ' + this.waga + ' ' + this.koni)
+                }
+            }
+
+            ciezarowka.pokaz_kapshuk=function() {alert('marka: ' + this.marka + ' waga: ' + this.waga + ' kolor: ' + this.koni)}
+            //ciezarowka.pokaz_kapshuk();
+
+            var dom = 
+            {
+                kolor: 'zółty',
+                pietra: 2,
+                mieszkance: 7,
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.kolor + ' ' + this.pietra + ' ' + this.mieszkance)
+                }
+            }
+
+            dom.pokaz_kapshuk=function() {alert('kolor : ' + this.kolor + ' piętra: ' + this.pietra + ' mieszkance : ' + this.mieszkance)}
+            //dom.pokaz_kapshuk();
+
+            var pudelko = 
+            {
+                objetosc: '5 cm^3',
+                boka: '3 cm',
+                bokb: '5 cm',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.objetosc + ' ' + this.boka + ' ' + this.bokb)
+                }
+            }
+
+            pudelko.pokaz_kapshuk=function() {alert('objętość: ' + this.objetosc + ' bokA: ' + this.boka + ' bokB: ' + this.bokb)}
+            //pudelko.pokaz_kapshuk();
+
+            var wazon = 
+            {
+                kolor: 'zielony',
+                material: 'karton',
+                srednica: 30,
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.kolor + ' ' + this.material + ' ' + this.srednica)
+                }
+            }
+
+            wazon.pokaz_kapshuk=function() {alert('kolor: ' + this.kolor + ' material: ' + this.material + ' średnica: ' + this.srednica)}
+            //wazon.pokaz_kapshuk();
+
+            var pociag = 
+            {
+                dlugosc: '500 m',
+                wagony: 5,
+                typ: 'pendolino',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.dlugosc + ' ' + this.wagony + ' ' + this.typ)
+                }
+            }
+
+            pociag.pokaz_kapshuk=function() {alert('długość: ' + this.dlugosc + ' wagony: ' + this.wagony + ' typ: ' + this.typ)}
+            //pociag.pokaz_kapshuk();
+
+            var mebel = 
+            {
+                material: 'eko-skóra',
+                kolor: 'brązowy',
+                kreci_sie: 'tak',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.material + ' ' + this.kolor + ' ' + this.kreci_sie)
+                }
+            }
+
+            mebel.pokaz_kapshuk=function() {alert('materiał: ' + this.material + ' kolor: ' + this.kolor + ' kreci się? : ' + this.kreci_sie)}
+            //mebel.pokaz_kapshuk();
+
+            var autobus = 
+            {
+                marka: 'man',
+                kolor: 'biały',
+                koni: '600',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.marka + ' ' + this.kolor + ' ' + this.koni)
+                }
+            }
+
+            autobus.pokaz_kapshuk=function() {alert('marka: ' + this.marka + ' kolor: ' + this.kolor + ' koni: ' + this.koni)}
+            //autobus.pokaz_kapshuk();
+
+            var komputer = 
+            {
+                procek: 'intel',
+                grafika: 'RTX',
+                ram: '32 GB',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.procek + ' ' + this.grafika + ' ' + this.ram)
+                }
+            }
+
+            komputer.pokaz_kapshuk=function() {alert('procesor: ' + this.procek + ' grafika: ' + this.grafika + ' RAM: ' + this.ram)}
+            //komputer.pokaz_kapshuk();
+
+            var monitor = 
+            {
+                matryca: 'VA+',
+                producent: 'Samsung',
+                cali: 32,
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.matryca + ' ' + this.producent + ' ' + this.cali)
+                }
+            }
+
+            monitor.pokaz_kapshuk=function() {alert('matryca: ' + this.matryca + ' producent: ' + this.producent + ' Cali: ' + this.cali)}
+            //monitor.pokaz_kapshuk();
+
+            var router = 
+            {
+                producent: 'TP-Link',
+                zasieg: '100m',
+                czestotliwosc: '5 GHz',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.producent + ' ' + this.zasięg + ' ' + this.czestotliwosc)
+                }
+            }
+
+            router.pokaz_kapshuk=function() {alert('producent: ' + this.producent + ' zasięg: ' + this.zasieg + ' częstotliwość: ' + this.czestotliwosc)}
+            //router.pokaz_kapshuk();
+
+            var telefon = 
+            {
+                producent: 'Apple',
+                cali: 6.1,
+                color: 'Pacific Blue',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.producent + ' ' + this.cali + ' ' + this.color)
+                }
+            }
+
+            telefon.pokaz_kapshuk=function() {alert('producent: ' + this.producent + ' cali: ' + this.cali + ' Kolor: ' + this.color)}
+            //telefon.pokaz_kapshuk();
+
+            var spodnie = 
+            {
+                rodzaj: 'dresy',
+                color: 'szare',
+                plec: 'męskie',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.rodzaj + ' ' + this.color + ' ' + this.plec)
+                }
+            }
+
+            spodnie.pokaz_kapshuk=function() {alert('rodzaj: ' + this.rodzaj + ' kolor: ' + this.color + ' płeć: ' + this.plec)}
+            //spodnie.pokaz_kapshuk();
+
+            var owoc = 
+            {
+                color: 'zółty',
+                rozmiar: '20 cm',
+                nazwa: 'banan',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.color + ' ' + this.rozmiar + ' ' + this.nazwa)
+                }
+            }
+
+            owoc.pokaz_kapshuk=function() {alert('kolor: ' + this.color + ' rozmiar: ' + this.rozmiar + ' nazwa: ' + this.nazwa)}
+            //owoc.pokaz_kapshuk();
+
+            var wiezowiec = 
+            {
+                nazwa: 'Singer Building',
+                miasto: 'New York',
+                wysokosc: '187m',
+                wyswietl_kapshuk: function ()
+                {
+                    document.write(this.nazwa + ' ' + this.miasto + ' ' + this.wysokosc)
+                }
+            }
+
+            wiezowiec.pokaz_kapshuk=function() {alert('nazwa: ' + this.nazwa + ' miasto: ' + this.miasto + ' wysokość: ' + this.wysokosc)}
+            //wiezowiec.pokaz_kapshuk();
+        </script> 
+        <input type="button" value="Samochód" onclick="samochod.pokaz_kapshuk()"><br>
+        <input type="button" value="Ciężarówka" onclick="ciezarowka.pokaz_kapshuk()"><br>
+        <input type="button" value="Dom" onclick="dom.pokaz_kapshuk()"><br>
+        <input type="button" value="Pudelko" onclick="pudelko.pokaz_kapshuk()"><br>
+        <input type="button" value="Wazon" onclick="wazon.pokaz_kapshuk()"><br>
+        <input type="button" value="Pociąg" onclick="pociag.pokaz_kapshuk()"><br>
+        <input type="button" value="Mebel" onclick="mebel.pokaz_kapshuk()"><br>
+        <input type="button" value="Autobus" onclick="autobus.pokaz_kapshuk()"><br>
+        <input type="button" value="Komputer" onclick="komputer.pokaz_kapshuk()"><br>
+        <input type="button" value="Monitor" onclick="monitor.pokaz_kapshuk()"><br>
+        <input type="button" value="Router" onclick="router.pokaz_kapshuk()"><br>
+        <input type="button" value="Telefon" onclick="telefon.pokaz_kapshuk()"><br>
+        <input type="button" value="Spodnie" onclick="spodnie.pokaz_kapshuk()"><br>
+        <input type="button" value="Owoc" onclick="owoc.pokaz_kapshuk()"><br>
+        <input type="button" value="Wieżowiec" onclick="wiezowiec.pokaz_kapshuk()"><br>
+    </body>
+</html>

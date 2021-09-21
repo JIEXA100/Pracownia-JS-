@@ -1,0 +1,54 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            function Wykonaj()
+            {
+                var log = login.value;
+                var pass = haslo.value;
+
+            function User(mail,password,awatar)
+            {
+                this.mail=mail;
+                this.password=password;
+                this.awatar=awatar;
+            
+
+                    this.addUser = function()
+                     {
+                        
+                        },
+                    this.login =  function()
+                    {
+                    
+                        if(log==this.mail && pass==this.password)
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                
+            }
+
+            var nowy = new User('jacek','owca','');
+
+            if(nowy.login())
+            {
+                document.write("Udało się zalogować!");
+            }
+            else
+            {
+                document.write("Nie udało się zalogować!");
+            }
+        }
+        </script> 
+        Podaj e-mail: <input type="text" id="login"><br>
+        Podaj hasło: <input type="password" id="haslo"><br>
+        <input type="button" value="Zaloguj się" onclick="Wykonaj()"><br>
+    </body>
+</html>

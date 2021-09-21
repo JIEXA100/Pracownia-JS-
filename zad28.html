@@ -1,0 +1,219 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            function samochod(marka,napęd,kolor) 
+            {
+                this.marka=marka;
+                this.napęd=napęd;
+                this.kolor=kolor;
+                
+            }
+
+            var samochod = new samochod('mercedes','4x4','biały');
+
+            samochod.pokaz_kapshuk=function() {alert('marka: ' + this.marka + ' napęd: ' + this.napęd + ' kolor: ' + this.kolor)}
+            //samochod.pokaz_kapshuk();
+
+            function ciezarowka(marka,waga,koni) 
+            {
+                this.marka=marka;
+                this.waga=waga;
+                this.koni=koni;
+                
+            }
+
+            var ciezarowka = new ciezarowka('Scania','15 tonn', 700);
+
+            ciezarowka.pokaz_kapshuk=function() {alert('marka: ' + this.marka + ' waga: ' + this.waga + ' kolor: ' + this.koni)}
+            //ciezarowka.pokaz_kapshuk();
+
+            function dom(kolor,pietra,mieszkance) 
+            {
+                this.kolor=kolor;
+                this.pietra=pietra;
+                this.mieszkance=mieszkance;
+                
+            }
+
+
+            var dom = new dom('żółty',2,7);
+
+            dom.pokaz_kapshuk=function() {alert('kolor : ' + this.kolor + ' piętra: ' + this.pietra + ' mieszkance : ' + this.mieszkance)}
+            //dom.pokaz_kapshuk();
+
+            function pudelko(objetosc,boka,bokb) 
+            {
+                this.objetosc=objetosc;
+                this.boka=boka;
+                this.bokb=bokb;
+                
+            }
+            
+            var pudelko = new pudelko('5 cm^3','3 cm','5 cm');
+
+            pudelko.pokaz_kapshuk=function() {alert('objętość: ' + this.objetosc + ' bokA: ' + this.boka + ' bokB: ' + this.bokb)}
+            //pudelko.pokaz_kapshuk();
+
+            function wazon(kolor,material,srednica) 
+            {
+                this.kolor=kolor;
+                this.material=material;
+                this.srednica=srednica;
+                
+            }
+
+            var wazon = new wazon('zielony','karton',30);
+
+            wazon.pokaz_kapshuk=function() {alert('kolor: ' + this.kolor + ' material: ' + this.material + ' średnica: ' + this.srednica)}
+            //wazon.pokaz_kapshuk();
+
+            function pociag(dlugosc,wagony,typ) 
+            {
+                this.dlugosc=dlugosc;
+                this.wagony=wagony;
+                this.typ=typ;
+                
+            }
+
+            var pociag = new pociag('500 m',5,'pendolino');
+
+            pociag.pokaz_kapshuk=function() {alert('długość: ' + this.dlugosc + ' wagony: ' + this.wagony + ' typ: ' + this.typ)}
+            //pociag.pokaz_kapshuk();
+
+            function mebel(material,kolor,kreci_sie) 
+            {
+                this.material=material;
+                this.kolor=kolor;
+                this.kreci_sie=kreci_sie;
+                
+            }
+
+            var mebel = new mebel('eko-skóra','brązowy','tak');
+
+            mebel.pokaz_kapshuk=function() {alert('materiał: ' + this.material + ' kolor: ' + this.kolor + ' kreci się? : ' + this.kreci_sie)}
+            //mebel.pokaz_kapshuk();
+
+            function autobus(marka,kolor,koni) 
+            {
+                this.marka=marka;
+                this.kolor=kolor;
+                this.koni=koni;
+                
+            }
+
+            var autobus = new autobus('MAN','biały',600);
+
+            autobus.pokaz_kapshuk=function() {alert('marka: ' + this.marka + ' kolor: ' + this.kolor + ' koni: ' + this.koni)}
+            //autobus.pokaz_kapshuk();
+
+            function komputer(procek,grafika,ram) 
+            {
+                this.procek=procek;
+                this.grafika=grafika;
+                this.ram=ram;
+                
+            }
+
+            var komputer = new komputer('intel','RTX','32 GB');
+
+            komputer.pokaz_kapshuk=function() {alert('procesor: ' + this.procek + ' grafika: ' + this.grafika + ' RAM: ' + this.ram)}
+            //komputer.pokaz_kapshuk();
+
+            function monitor(matryca,producent,cali) 
+            {
+                this.matryca=matryca;
+                this.producent=producent;
+                this.cali=cali;
+                
+            }
+
+            var monitor = new monitor('VA+','Samsung',32);
+
+            monitor.pokaz_kapshuk=function() {alert('matryca: ' + this.matryca + ' producent: ' + this.producent + ' Cali: ' + this.cali)}
+            //monitor.pokaz_kapshuk();
+
+            function router(producent,zasieg,czestotliwosc) 
+            {
+                this.producent=producent;
+                this.zasieg=zasieg;
+                this.czestotliwosc=czestotliwosc;
+                
+            }
+
+            var router = new router('TP-Link','100 m','5 GHz');
+
+            router.pokaz_kapshuk=function() {alert('producent: ' + this.producent + ' zasięg: ' + this.zasieg + ' częstotliwość: ' + this.czestotliwosc)}
+            //router.pokaz_kapshuk();
+
+            function telefon(producent,cali,color) 
+            {
+                this.producent=producent;
+                this.cali=cali;
+                this.color=color;
+                
+            }
+
+            var telefon = new telefon('Apple',6.1,'Pacific Blue');
+
+            telefon.pokaz_kapshuk=function() {alert('producent: ' + this.producent + ' cali: ' + this.cali + ' Kolor: ' + this.color)}
+            //telefon.pokaz_kapshuk();
+
+            function spodnie(rodzaj,color,plec) 
+            {
+                this.rodzaj=rodzaj;
+                this.color=color;
+                this.plec=plec;
+                
+            }
+
+            var spodnie = new spodnie('dresy','szare','męskie');
+
+            spodnie.pokaz_kapshuk=function() {alert('rodzaj: ' + this.rodzaj + ' kolor: ' + this.color + ' płeć: ' + this.plec)}
+            //spodnie.pokaz_kapshuk();
+
+            function owoc(color,rozmiar,nazwa) 
+            {
+                this.color=color;
+                this.rozmiar=rozmiar;
+                this.nazwa=nazwa;
+                
+            }
+
+            var owoc = new owoc('żółty','20 zm','banan');
+
+            owoc.pokaz_kapshuk=function() {alert('kolor: ' + this.color + ' rozmiar: ' + this.rozmiar + ' nazwa: ' + this.nazwa)}
+            //owoc.pokaz_kapshuk();
+
+            function wiezowiec(nazwa,miasto,wysokosc) 
+            {
+                this.nazwa=nazwa;
+                this.miasto=miasto;
+                this.wysokosc=wysokosc;
+                
+            }
+
+            var wiezowiec = new wiezowiec('Singer Building','New York','187 m');
+
+            wiezowiec.pokaz_kapshuk=function() {alert('nazwa: ' + this.nazwa + ' miasto: ' + this.miasto + ' wysokość: ' + this.wysokosc)}
+            //wiezowiec.pokaz_kapshuk();
+        </script> 
+        <input type="button" value="Samochód" onclick="samochod.pokaz_kapshuk()"><br>
+        <input type="button" value="Ciężarówka" onclick="ciezarowka.pokaz_kapshuk()"><br>
+        <input type="button" value="Dom" onclick="dom.pokaz_kapshuk()"><br>
+        <input type="button" value="Pudelko" onclick="pudelko.pokaz_kapshuk()"><br>
+        <input type="button" value="Wazon" onclick="wazon.pokaz_kapshuk()"><br>
+        <input type="button" value="Pociąg" onclick="pociag.pokaz_kapshuk()"><br>
+        <input type="button" value="Mebel" onclick="mebel.pokaz_kapshuk()"><br>
+        <input type="button" value="Autobus" onclick="autobus.pokaz_kapshuk()"><br>
+        <input type="button" value="Komputer" onclick="komputer.pokaz_kapshuk()"><br>
+        <input type="button" value="Monitor" onclick="monitor.pokaz_kapshuk()"><br>
+        <input type="button" value="Router" onclick="router.pokaz_kapshuk()"><br>
+        <input type="button" value="Telefon" onclick="telefon.pokaz_kapshuk()"><br>
+        <input type="button" value="Spodnie" onclick="spodnie.pokaz_kapshuk()"><br>
+        <input type="button" value="Owoc" onclick="owoc.pokaz_kapshuk()"><br>
+        <input type="button" value="Wieżowiec" onclick="wiezowiec.pokaz_kapshuk()"><br>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <!--metatagi -->
+    <head>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            function history()
+            {
+                document.write(window.history.length);
+            }
+        </script>
+            <input type="button" name="przycisk1" value="Ile stron" onclick="history()">
+            <input type="button" name="przycisk2" value="Do przodu" onclick="window.history.forward()">
+            <input type="button" name="przycisk1" value="Do tyłu" onclick="window.history.back()">
+            <input type="button" name="przycisk2" value="2 do przodu" onclick="window.history.go(2)">
+            <input type="button" name="przycisk2" value="2 do tyłu" onclick="window.history.go(-2)">
+            <input type="button" name="przycisk2" value="Odśwież" onclick="window.history.go(0)">
+    </body>
+</html>

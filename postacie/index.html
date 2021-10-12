@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kreator postaci</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="avatar">
+            <div id="av">
+            </div>
+        </div>
+        <div id="konstr">
+            Wpisz Nick:<input type="text" id="nick"></br>
+            Wybierz klasę:
+            <select id="klass" onchange="Wykonaj()">
+                <option value="sep">Sephiroth</option>
+                <option value="cid">Cid</option>
+                <option value="bal">Balthier</option>
+                <option value="ash">Ashley Riot</option>
+            </select>
+            <br>
+        </div>
+        <div id="pokaz"></div>
+        <div id="EQ"></div>
+    </body>
+
+    <script>
+        function RPG(hp,mana,strength,agillity,intelligence,gold)
+            {
+                this.hp = hp;
+                this.mana = mana;
+                this.strength = strength;
+                this.agillity = agillity;
+                this.intelligence = intelligence;
+                this.gold = gold;
+            }
+            
+        sep = new RPG(100,89,72,61,65,98);
+        cid = new RPG(98,45,85,98,98,65);
+        bal = new RPG(96,65,87,94,74,93);
+        ash = new RPG(95,59,95,54,79,92); 
+
+        function item(pkt,mana,strength,price)
+        {
+            this.pkt = pkt;
+            this.mana = mana;
+            this.strength = strength;
+            this.price = price;
+        }
+
+        katana = new item(98,84,86,63);
+        spear = new item(95,93,65,76);
+        shotgun = new item(83,64,98,86);
+
+        function Wykonaj() 
+        {
+            var wybor = klass.value;
+            var name = nick.value;
+        
+            if(wybor == "sep")
+            {
+                document.getElementById("pokaz").innerHTML = "Nick: " + name + "<br>"
+                + "HP: " + sep.hp + "<br>"
+                + "Mana: " + sep.mana + "<br>"
+                + "Strenth: " + sep.strength + "<br>"
+                + "Agillity: " + sep.agillity + "<br>"
+                + "Intelligence: " + sep.intelligence + "<br>"
+                + "GOLD: " + sep.gold + "<br>";
+
+                document.getElementById("av").innerHTML = "<img src=\"Sephiroth.png\">";
+            }
+            else if(wybor == "cid")
+            {
+                document.getElementById("pokaz").innerHTML = "Nick: " + name + "<br>"
+                + "HP: " + cid.hp + "<br>"
+                + "Mana: " + cid.mana + "<br>"
+                + "Strenth: " + cid.strength + "<br>"
+                + "Agillity: " + cid.agillity + "<br>"
+                + "Intelligence: " + cid.intelligence + "<br>"
+                + "GOLD: " + cid.gold + "<br>";
+
+                document.getElementById("av").innerHTML = "<img src=\"Cid.jpg\">";
+            }
+            else if(wybor == "bal")
+            {
+                document.getElementById("pokaz").innerHTML = "Nick: " + name + "<br>"
+                + "HP: " + bal.hp + "<br>"
+                + "Mana: " + bal.mana + "<br>"
+                + "Strenth: " + bal.strength + "<br>"
+                + "Agillity: " + bal.agillity + "<br>"
+                + "Intelligence: " + bal.intelligence + "<br>"
+                + "GOLD: " + bal.gold + "<br>";
+
+                document.getElementById("av").innerHTML = "<img src=\"Balthier.png\">";
+            }
+            else if(wybor == "ash")
+            {
+                document.getElementById("pokaz").innerHTML = "Nick: " + name + "<br>"
+                + "HP: " + ash.hp + "<br>"
+                + "Mana: " + ash.mana + "<br>"
+                + "Strenth: " + ash.strength + "<br>"
+                + "Agillity: " + ash.agillity + "<br>"
+                + "Intelligence: " + ash.intelligence + "<br>"
+                + "GOLD: " + ash.gold + "<br>";
+
+                document.getElementById("av").innerHTML = "<img src=\"Ashley.jpg\">";
+            }
+        }
+    </script>
+</html>

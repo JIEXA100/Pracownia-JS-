@@ -1,0 +1,34 @@
+#avatar
+{
+    float: left;
+    width: 30%;
+    height: 500px;
+}
+
+#avatar > #av > img 
+{
+    width: 400px;
+    height: 500px;
+}
+
+#konstr
+{
+    font-size:30px;
+    float: left;
+    width: 70%;
+    height: 500px;
+}
+
+#pokaz
+{
+    font-size: 20px;
+    width: 30%;
+    height: 700px;
+}
+
+#EQ
+{
+    font-size: 20px;
+    width: 30%;
+    height: 700px;
+}

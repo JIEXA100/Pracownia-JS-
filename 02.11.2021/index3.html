@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <form>
+            ARMOR: <input type="number" id="armor"></br>
+            DMG: <input type="number" id="dmg"></br>
+            BONUS:</br>
+            <input type="radio" name="chk" value=5>5%<input type="radio" name="chk" value=10>10%<input type="radio" name="chk" value=15>15%<br/>
+            KRIT:<br>
+            <input type="checkbox" name="krit1" value=5>-5%<input type="checkbox" name="krit2" value=10>-10%<input type="checkbox" name="krit3" value=15>-15%<br/>
+            <input type="button" value="Policz" onclick="Policz(this.form)">
+            <div id="wynik"></div><br>
+        </form>
+    </body>
+    <script>
+
+        function Policz(dane) {
+        if(dane.chk[0].checked)
+        {
+            wartosc = dane.armor.value * 1.05;
+            if(dane.krit1.checked == true)
+            {
+                wartosc = wartosc * 0.95;
+            }
+            if(dane.krit2.checked == true)
+            {
+                wartosc = wartosc * 0.9;
+            }
+            if(dane.krit3.checked == true)
+            {
+                wartosc = wartosc * 0.85;
+            }
+            wartosc = wartosc - dane.dmg.value;
+        }
+        if(dane.chk[1].checked)
+        {
+            wartosc = dane.armor.value * 1.1;
+            if(dane.krit1.checked == true)
+            {
+                wartosc = wartosc * 0.95;
+            }
+            if(dane.krit2.checked == true)
+            {
+                wartosc = wartosc * 0.9;
+            }
+            if(dane.krit3.checked == true)
+            {
+                wartosc = wartosc * 0.85;
+            }
+            wartosc = wartosc - dane.dmg.value;
+            
+        }
+        if(dane.chk[2].checked)
+        {
+            wartosc = dane.armor.value * 1.15;
+            if(dane.krit1.checked == true)
+            {
+                wartosc = wartosc * 0.95;
+            }
+            if(dane.krit2.checked == true)
+            {
+                wartosc = wartosc * 0.9;
+            }
+            if(dane.krit3.checked == true)
+            {
+                wartosc = wartosc * 0.85;
+            }
+            wartosc = wartosc - dane.dmg.value;
+        }
+        wynik.innerHTML = "<table border=\"1px,solid\"><tr><th>Zostanie ci</tr><tr><td>" + wartosc + " pkt armoru<td></tr></table>";
+    }
+    </script>
+</html>

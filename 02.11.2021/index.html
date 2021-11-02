@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <form>
+            Cena: <input type="number" id="price"></br>
+            Ilość: <input type="number" id="count"></br>
+            Zniżka:</br>
+            <input type="checkbox" id="chk1" value="5">5%<input type="checkbox" id="chk2" value="10">10%<input type="checkbox" id="chk3" value="20">20%<br/>
+            <input type="button" value="Policz" onclick="Policz(this.form)">
+            <div id="wynik"></div>
+        </form>
+    </body>
+    <script>
+
+        function Policz(dane) {
+        if(dane.chk1.checked == true)
+        {
+            wartosc = dane.price.value * dane.count.value * 0.95;
+        }
+        else if(dane.chk2.checked == true)
+        {
+            wartosc = dane.price.value * dane.count.value * 0.9;
+            
+        }
+        else if(dane.chk3.checked == true)
+        {
+            wartosc = dane.price.value * dane.count.value * 0.8;
+        }
+        else
+        {
+            wartosc = dane.price.value * dane.count.value;
+        }
+        wynik.innerHTML = "Zapłacisz " + wartosc + " złotych";
+    }
+    </script>
+</html>

@@ -45,6 +45,7 @@ header
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
+    
 }
 
 footer
@@ -72,4 +73,9 @@ a:hover
 ul
 {
     color: red;
+}
+
+.table
+{
+    border: 1px solid blue;
 }

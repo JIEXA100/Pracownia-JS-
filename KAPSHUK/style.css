@@ -1,0 +1,75 @@
+body
+{
+    margin: 150px;
+    margin-left: 450px;
+}
+
+header
+{
+    width: 900px;
+    height: 100px;
+    background-color: lightgrey;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.lewy
+{
+    width: 210px;
+    height: 450px;
+    float: left;
+    background-color: lightgrey;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.prawy
+{
+    width: 210px;
+    height: 450px;
+    float: left;
+    background-color: lightgrey;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.srodkowy
+{
+    width: 460px;
+    height: 450px;
+    float: left;
+    background-color: lightgrey;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+footer
+{
+    width: 900px;
+    height: 50px;
+    float: left;
+    background-color: lightgrey;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    color: fuchsia;
+    padding-top: 20px;
+}
+a
+{
+    color: black;
+}
+
+a:hover
+{
+    color: blue;
+}
+
+ul
+{
+    color: red;
+}

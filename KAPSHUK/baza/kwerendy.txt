@@ -1,0 +1,7 @@
+Zapytanie a) SELECT Tytul FROM filmy WHERE Gatunek IN('SF','Przygodowy'); 
+Zapytanie b) SELECT Tytul,Nazwisko FROM `filmy` INNER JOIN `rezyserzy` ON RezyserID=rezyserzy.IDRezyser;
+Zapytanie c) SELECT Imie,Nazwisko,COUNT(IDFilm) FROM `rezyserzy` INNER JOIN `filmy` ON IDRezyser=filmy.RezyserID GROUP BY Imie,Nazwisko;
+Zapytanie d) SELECT Imie,Nazwisko,COUNT(IDFilm) FROM `rezyserzy` INNER JOIN `filmy` ON IDRezyser=filmy.RezyserID GROUP BY Imie,Nazwisko ORDER BY COUNT(IDFilm) DESC LIMIT 1;
+Zapytanie e) SELECT Tytul,Ocena FROM `filmy` INNER JOIN `recenzje` ON RecenzjaID=recenzje.IDRecenzja WHERE Ocena = 4;
+Zapytanie f) SELECT Gatunek,COUNT(IDFilm) FROM `filmy` GROUP BY Gatunek;
+Zapytanie g) INSERT INTO `rezyserzy`(`IDRezyser`, `Imie`, `Nazwisko`) VALUES (4,'Andrzej','Wajda');
